@@ -1,0 +1,16 @@
+<h2>{{currentUser}}</h2>
+<div>
+    <button (click)="routeToLobby()">Lobby</button>
+</div>
+<div class="header center">Change Name</div>
+<form [formGroup]="changeNameForm" (ngSubmit)="change()">
+
+    <div>
+        <input type="text" id="username" placeholder="New Name" autocomplete="off" formControlName="username" required>
+    </div>
+
+    <div class="actions">
+        <button color="primary" type="submit" [disabled]="!changeNameForm.valid">Change</button>
+    </div>
+
+</form>

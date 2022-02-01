@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backgammon.Services.Identity.Api", "Backgammon.Services.Identity.Api\Backgammon.Services.Identity.Api.csproj", "{70900B30-6CA0-4B1C-9B23-A756BF9CD9D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backgammon.Services.Identity.Domain", "Backgammon.Services.Identity.Domain\Backgammon.Services.Identity.Domain.csproj", "{1CAEC762-176E-4F63-8134-EB54DEFC6FB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backgammon.Services.Identity.Application", "Backgammon.Services.Identity.Application\Backgammon.Services.Identity.Application.csproj", "{70799300-B3F6-40F0-9840-3FBEBFF313F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backgammon.Services.Identity.Infra.Data", "Backgammon.Services.Identity.Infra.Data\Backgammon.Services.Identity.Infra.Data.csproj", "{D4D26B26-7450-45CD-AD76-F46A5D41371D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backgammon.Services.Identity.Infra.Ioc", "Backgammon.Services.Identity.Infra.Ioc\Backgammon.Services.Identity.Infra.Ioc.csproj", "{43AB8E94-8944-4766-86E5-53B4FD8C120C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backgammon.Services.Identity.Infra.Secrets", "Backgammon.Services.Identity.Infra.Secrets\Backgammon.Services.Identity.Infra.Secrets.csproj", "{5E44FD34-B610-4E15-B51B-BFDF326E1D3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backgammon.Services.Identity.Api.IntegrationTests", "Backgammon.Services.Identity.Api.IntegrationTests\Backgammon.Services.Identity.Api.IntegrationTests.csproj", "{4F1B51B0-56F1-4E9C-A659-CAECE6547327}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backgammon.Services.Identity.Application.UnitTests", "Backgammon.Services.Identity.Application.UnitTests\Backgammon.Services.Identity.Application.UnitTests.csproj", "{F16D052E-CC7F-45C0-9C8B-F6A9F706A03D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Backgammon.Services.Identity.Infra.UnitTests", "Backgammon.Services.Identity.Infra.UnitTests\Backgammon.Services.Identity.Infra.UnitTests.csproj", "{9E62F7A4-6D2D-4F7D-ACC9-827C5F974FE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70900B30-6CA0-4B1C-9B23-A756BF9CD9D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70900B30-6CA0-4B1C-9B23-A756BF9CD9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70900B30-6CA0-4B1C-9B23-A756BF9CD9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70900B30-6CA0-4B1C-9B23-A756BF9CD9D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CAEC762-176E-4F63-8134-EB54DEFC6FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CAEC762-176E-4F63-8134-EB54DEFC6FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CAEC762-176E-4F63-8134-EB54DEFC6FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CAEC762-176E-4F63-8134-EB54DEFC6FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70799300-B3F6-40F0-9840-3FBEBFF313F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70799300-B3F6-40F0-9840-3FBEBFF313F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70799300-B3F6-40F0-9840-3FBEBFF313F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70799300-B3F6-40F0-9840-3FBEBFF313F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D26B26-7450-45CD-AD76-F46A5D41371D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D26B26-7450-45CD-AD76-F46A5D41371D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D26B26-7450-45CD-AD76-F46A5D41371D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D26B26-7450-45CD-AD76-F46A5D41371D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43AB8E94-8944-4766-86E5-53B4FD8C120C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43AB8E94-8944-4766-86E5-53B4FD8C120C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43AB8E94-8944-4766-86E5-53B4FD8C120C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43AB8E94-8944-4766-86E5-53B4FD8C120C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E44FD34-B610-4E15-B51B-BFDF326E1D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E44FD34-B610-4E15-B51B-BFDF326E1D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E44FD34-B610-4E15-B51B-BFDF326E1D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E44FD34-B610-4E15-B51B-BFDF326E1D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F1B51B0-56F1-4E9C-A659-CAECE6547327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F1B51B0-56F1-4E9C-A659-CAECE6547327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F1B51B0-56F1-4E9C-A659-CAECE6547327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F1B51B0-56F1-4E9C-A659-CAECE6547327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F16D052E-CC7F-45C0-9C8B-F6A9F706A03D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F16D052E-CC7F-45C0-9C8B-F6A9F706A03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F16D052E-CC7F-45C0-9C8B-F6A9F706A03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F16D052E-CC7F-45C0-9C8B-F6A9F706A03D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E62F7A4-6D2D-4F7D-ACC9-827C5F974FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E62F7A4-6D2D-4F7D-ACC9-827C5F974FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E62F7A4-6D2D-4F7D-ACC9-827C5F974FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E62F7A4-6D2D-4F7D-ACC9-827C5F974FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0617F97-46D7-452C-A4F1-1E3EA0254B99}
+	EndGlobalSection
+EndGlobal

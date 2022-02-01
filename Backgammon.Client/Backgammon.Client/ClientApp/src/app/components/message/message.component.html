@@ -1,0 +1,6 @@
+<div [ngClass]="{userdiv: isUser,chatterdiv:!isUser}">
+    <div [ngClass]="{user: isUser,chatter:!isUser}">
+        <span style="white-space: pre-wrap;font-size: 20px;">{{text}}</span>
+        <span style="font-size: 10px;">{{sentAt|date:'H:mm'}}</span>
+    </div>
+</div>

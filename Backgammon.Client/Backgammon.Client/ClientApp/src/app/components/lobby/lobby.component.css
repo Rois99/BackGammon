@@ -1,0 +1,109 @@
+:host {
+    height: 100%;
+}
+
+.lobby-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+}
+
+.how-to-box {
+    position: absolute;
+    display: inline-block;
+    z-index: 50;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    background-color: rgba(222, 184, 135, 0.9);
+    border-radius: 10px;
+    height: 80%;
+}
+
+.text-box {
+    height: 94%;
+    padding: 4px;
+    overflow: auto;
+}
+
+.info-box {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    z-index: 50;
+    transform: translateX(-50%);
+    background-color: rgba(222, 184, 135, 0.9);
+    border-radius: 10px;
+}
+
+.btn-bar {
+    display: flex;
+    justify-content: right;
+}
+
+.top-bar {
+    background-color: rgba(100, 72, 40, 0.767);
+    grid-column: 1;
+    grid-column-end: span 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-list {
+    background-color: rgba(199, 210, 211, 0.514);
+    grid-column: 1;
+    grid-row: 2;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.user-list>ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+    margin: 2px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    padding-left: 2px;
+}
+
+.user>div {
+    display: flex;
+    font-size: 12;
+}
+
+.offline-user {
+    background-color: rgba(139, 0, 0, 0.3);
+}
+
+.online-user {
+    background-color: rgba(0, 100, 0, 0.3);
+}
+
+.game-container {
+    background-color: rgba(217, 213, 221, 0.698);
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.game-container-hide {
+    width: 0%;
+}
+
+.game-container-show {
+    width: 100%;
+}
+
+.chat-container {
+    background-color: rgba(200, 175, 175, 0.3);
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    grid-column: 3;
+    grid-row: 2;
+}

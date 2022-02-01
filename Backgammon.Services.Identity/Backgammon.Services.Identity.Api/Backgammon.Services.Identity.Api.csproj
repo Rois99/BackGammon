@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <AssemblyName>Backgammon.Services.Identity.Api</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Backgammon.Services.Identity.Application\Backgammon.Services.Identity.Application.csproj" />
+    <ProjectReference Include="..\Backgammon.Services.Identity.Domain\Backgammon.Services.Identity.Domain.csproj" />
+    <ProjectReference Include="..\Backgammon.Services.Identity.Infra.Ioc\Backgammon.Services.Identity.Infra.Ioc.csproj" />
+  </ItemGroup>
+
+</Project>

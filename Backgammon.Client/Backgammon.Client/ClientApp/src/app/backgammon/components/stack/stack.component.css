@@ -1,0 +1,30 @@
+:host {
+    position: relative;
+}
+
+:host[ng-reflect-is-droppable=true] {
+    background-color: rgba(0, 174, 255, 0.329);
+}
+
+:host>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.stack-bottom {
+    justify-content: flex-end;
+}
+
+.stack-two {
+    transform: translate(10%, -1%);
+    z-index: 2;
+}
+
+.stack-three {
+    transform: translate(20%, -2%);
+    z-index: 3;
+}

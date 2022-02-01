@@ -1,0 +1,8 @@
+<div class="grid-box">
+    <button class="login-tab" (click)="onLoginClick()">Login</button>
+    <button class="register-tab" (click)="onRegisterClick()">register</button>
+    <div class="form-container">
+        <app-login *ngIf="isLogin"></app-login>
+        <app-register *ngIf="!isLogin"></app-register>
+    </div>
+</div>

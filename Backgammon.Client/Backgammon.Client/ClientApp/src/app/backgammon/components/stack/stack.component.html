@@ -1,0 +1,3 @@
+<div *ngFor="let n of ((whitePieces|max:blackPieces)|stack:maxSize) | enumerate" [ngClass]="{'stack-bottom':isBottom}" [ngStyle]="{'z-index':n+1,'transform':'translate('+n*10+'%, -'+n+'%)'}">
+    <app-piece *ngFor="let i of ((whitePieces|max:blackPieces) | enumerate:n*maxSize:((n+1)*maxSize):isBottom)" [draggable]="isDraggable(i)" [isMoveable]="isDraggable(i)" (dragstart)="drag($event)" (dragend)="dragStop($event)" [isWhite]="whitePieces>0"></app-piece>
+</div>

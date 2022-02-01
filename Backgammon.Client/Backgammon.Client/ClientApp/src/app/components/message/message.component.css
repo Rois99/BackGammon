@@ -1,0 +1,31 @@
+:host {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.userdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.chatterdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.user {
+    background-color: greenyellow;
+    border: gray 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.chatter {
+    align-self: flex-end;
+    background-color: ivory;
+    border: gray 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+}

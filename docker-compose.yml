@@ -1,0 +1,68 @@
+version: '3.5'
+
+services: 
+  identity:
+    build:
+      context: ./Backgammon.Services.Identity
+      dockerfile: ./Dockerfile
+    container_name: identity
+    restart: always
+    environment:
+      ASPNETCORE_ENVIRONMENT: Docker
+    ports:
+      - "5000:80"
+    depends_on: 
+      - mssql
+    networks:
+      - backgammon_network
+
+  chat:
+    build:
+      context: ./Backgammon.Services.Chat
+      dockerfile: ./Dockerfile
+    container_name: chat
+    restart: always
+    environment:
+      ASPNETCORE_ENVIRONMENT: Docker
+    ports:
+      - "5050:80"
+    depends_on: 
+      - mssql
+    networks:
+      - backgammon_network
+
+  game:
+    build:
+      context: ./Backgammon.Services.Game
+      dockerfile: ./Dockerfile
+    container_name: game
+    restart: always
+    environment:
+      ASPNETCORE_ENVIRONMENT: Docker
+    ports:
+      - "6060:80"
+    depends_on: 
+      - mssql
+    networks:
+      - backgammon_network
+  
+  mssql:
+    image: mcr.microsoft.com/mssql/server
+    container_name: mssql
+    volumes: 
+      - mssql_volume:/var/opt/mssql
+    restart: always
+    environment:
+      SA_PASSWORD: Pa55!W0rd
+      ACCEPT_EULA: Y
+    ports: 
+      - 14033:1433
+    networks:
+      - backgammon_network
+
+networks: 
+  backgammon_network:
+    driver: bridge
+
+volumes: 
+  mssql_volume: {}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-6 -6 200 200" >
+  <rect width='188' height='188' stroke="black" stroke-width="12" fill="white" rx="16" />
+  <circle cx="141" cy="47" r="16" fill="black"/>
+  <circle cx="141" cy="141" r="16" fill="black"/>
+  <circle cx="47" cy="94" r="16" fill="black"/>
+  <circle cx="141" cy="94" r="16" fill="black"/>
+  <circle cx="47" cy="141" r="16" fill="black"/>
+  <circle cx="47" cy="47" r="16" fill="black"/>
+</svg>

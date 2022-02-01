@@ -1,0 +1,35 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.chat-with {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(222, 184, 135, 0.582);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.messages-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3px;
+    overflow-y: auto;
+}
+
+.send-form {
+    display: flex;
+}
+
+.send-btn {
+    height: 100%;
+}
+
+#messageBody {
+    resize: none;
+    width: 90%;
+}

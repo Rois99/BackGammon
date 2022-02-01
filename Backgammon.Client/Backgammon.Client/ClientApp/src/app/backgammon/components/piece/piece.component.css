@@ -1,0 +1,44 @@
+:host {
+    width: 90%;
+    aspect-ratio: 1/1;
+}
+
+:host>div {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.white {
+    background-image: url(../../../../assets/pice/w-piece.svg);
+}
+
+.black {
+    background-image: url(../../../../assets/pice/b-piece.svg);
+}
+
+.piece-overlay {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(255, 255, 221, 0.99), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    animation: glow 4s ease-out infinite;
+    background-size: 200% 200%;
+    cursor: grab;
+}
+
+.piece-overlay:active {
+    cursor: grabbing;
+}
+
+@keyframes glow {
+    0% {
+        background-position: -50% 50%
+    }
+    40% {
+        background-position: 150% 50%
+    }
+    100% {
+        background-position: 150% 50%
+    }
+}

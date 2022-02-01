@@ -1,0 +1,28 @@
+:host {
+    height: 60%;
+    aspect-ratio: 1/1;
+}
+
+:host[ng-reflect-number='1'] {
+    background-image: url(../../../../assets/dice/dice-face-1.svg);
+}
+
+:host[ng-reflect-number='2'] {
+    background-image: url(../../../../assets/dice/dice-face-2.svg);
+}
+
+:host[ng-reflect-number='3'] {
+    background-image: url(../../../../assets/dice/dice-face-3.svg);
+}
+
+:host[ng-reflect-number='4'] {
+    background-image: url(../../../../assets/dice/dice-face-4.svg);
+}
+
+:host[ng-reflect-number='5'] {
+    background-image: url(../../../../assets/dice/dice-face-5.svg);
+}
+
+:host[ng-reflect-number='6'] {
+    background-image: url(../../../../assets/dice/dice-face-6.svg);
+}

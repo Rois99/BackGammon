@@ -1,0 +1,30 @@
+:host {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+.grid-box {
+    display: grid;
+    border: 1px black solid;
+    background-color: whitesmoke;
+    grid-template-columns: 1fr 1fr;
+}
+
+.login-tab {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.register-tab {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.form-container {
+    margin: 10px;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
